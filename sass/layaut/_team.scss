@@ -44,32 +44,3 @@
   padding-right: auto;
   padding-left: auto;
 }
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-}
-.social-item:not(:last-child) + :not(:first-child) {
-  margin-left: 10px;
-}
-.social-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  fill: var(--icons-color);
-  transition: fill var(--hover-duration) var(--hover-time-function),
-    background-color var(--hover-duration) var(--hover-time-function);
-}
-.social-icons {
-  width: 20px;
-  height: 20px;
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-  fill: #ffffff;
-}

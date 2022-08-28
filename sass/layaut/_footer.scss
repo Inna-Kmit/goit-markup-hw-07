@@ -13,11 +13,12 @@ footer {
   letter-spacing: 0.03em;
   color: var(--lighter-color);
   transition: color var(--hover-duration) var(--hover-time-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
+
 .footer-adress {
   font-style: normal;
   font-size: 14px;
@@ -25,12 +26,12 @@ footer {
   letter-spacing: 0.03em;
   color: var(--background-color);
   transition: color var(--hover-duration) var(--hover-time-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.footer-adress:hover,
-.footer-adress:focus {
-  color: var(--accent-color);
-}
 .acept-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -69,10 +70,10 @@ footer {
   border-radius: 50%;
   fill: var(--background-color);
   transition: background-color var(--hover-duration) var(--hover-time-function);
-}
-.acept-link:hover,
-.acept-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-submit {
@@ -133,6 +134,10 @@ footer {
   outline: none;
   padding-left: 28px;
   transition: background-color var(--hoover-duration) var(--hover-time-function);
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color);
+  }
 }
 
 .footer-input::placeholder,
@@ -149,8 +154,4 @@ footer {
 }
 .icon-submit {
   fill: var(--background-buttom-color);
-}
-.footer-button-submit:hover,
-.footer-button-submit:focus {
-  background-color: var(--second-accent-color);
 }

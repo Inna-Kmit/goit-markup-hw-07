@@ -30,16 +30,16 @@
   padding-bottom: 32px;
   display: block;
   transition: color var(--hover-duration) var(--hover-time-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header-list {
   margin-left: auto;
   display: flex;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
 .current {
   position: relative;
 }
@@ -67,12 +67,12 @@
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   transition: color var(--hover-duration) var(--hover-time-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
-  color: var(--accent-color);
-}
 .header-item:not(:last-child) {
   margin-right: 50px;
 }

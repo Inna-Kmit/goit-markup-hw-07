@@ -27,11 +27,10 @@
   fill: var(--icons-color);
   transition: border var(--hover-duration) var(--hover-time-function),
     fill var(--hover-duration) var(--hover-time-function);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
