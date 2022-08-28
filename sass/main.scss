@@ -1,0 +1,20 @@
+@import './utils/vars';
+
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
+@import './components/container';
+@import './components/btn';
+@import './components/section';
+@import './components/modal';
+@import './components/logo';
+
+@import './layaut/header';
+@import './layaut/hero';
+@import './layaut/features';
+@import './layaut/works';
+@import './layaut/team';
+@import './layaut/clients';
+@import './layaut/footer';
+@import './layaut/portfolio';
