@@ -30,17 +30,19 @@
   margin-right: 30px;
 }
 .features-list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14, 1.14, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
 .features-list-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14, 1.71, null, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   color: var(--second-text-color);
 }

@@ -17,26 +17,29 @@
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(36, 1.17, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
 .team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16, 1.19, 500, 0.03em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
   margin-bottom: 10px;
 }
 .team-text {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16, 1.19, null, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
   color: var(--second-text-color);
   text-align: center;
   padding-right: auto;

@@ -12,9 +12,10 @@ footer {
 }
 
 .footer-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14, 1.71, null, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   color: var(--lighter-color);
   transition: color var(--hover-duration) var(--hover-time-function);
   &:hover,
@@ -28,10 +29,11 @@ footer {
 }
 
 .footer-address {
+  @include font(14, 1.71, null, 0.03em);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   color: var(--background-color);
   transition: color var(--hover-duration) var(--hover-time-function);
   &:hover,
@@ -41,11 +43,12 @@ footer {
 }
 
 .acept-title {
+  @include font(14, 1.14, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
 }
@@ -87,10 +90,11 @@ footer {
 }
 
 .submit-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14, 1.14, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
 }
@@ -114,15 +118,21 @@ footer {
   }
   &::placeholder,
   &:focus-visible {
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16, 1.25, null, 0.03em);
+    // font-size: 16px;
+    // line-height: 1.25;
+    // letter-spacing: 0.03em;
     align-items: center;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .footer-button-submit {
+  @include font(16, 1.88, 700, 0.06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
   display: inline-flex;
@@ -130,10 +140,6 @@ footer {
   justify-content: baseline;
   min-width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

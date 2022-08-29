@@ -16,15 +16,16 @@
 }
 
 .portfolio-text {
+  @include font(18, 1.56, null, 0.03em);
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.56;
+  // letter-spacing: 0.03em;
   position: absolute;
   height: 100%;
   top: 0;
   left: 0;
   padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   color: var(--background-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
@@ -49,16 +50,18 @@
 }
 
 .portfolio-list-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18, 2, null, 0.06em);
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 .portfolio-list-text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font(16, 1.87, null, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.87;
+  // letter-spacing: 0.03em;
   color: var(--second-text-color);
   .portfolio-list-link:focus & {
     transform: translateY(0%);
