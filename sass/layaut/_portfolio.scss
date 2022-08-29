@@ -29,6 +29,9 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: var(--hover-duration) var(--hover-time-function);
+  .portfolio-list-link:hover & {
+    transform: translateY(0%);
+  }
 }
 .portfolio-list-wrap {
   position: relative;
@@ -57,6 +60,9 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  .portfolio-list-link:focus & {
+    transform: translateY(0%);
+  }
 }
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
@@ -64,8 +70,4 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow var(--hover-duration) var(--hover-time-function);
-}
-.portfolio-list-link:hover .portfolio-text,
-.portfolio-list-link:focus .portfolio-list-text {
-  transform: translateY(0%);
 }

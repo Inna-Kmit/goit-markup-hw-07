@@ -2,10 +2,6 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-link.current {
-  color: var(--accent-color);
-}
-
 .navigation {
   display: flex;
 }
@@ -16,10 +12,11 @@
 .navigation-item {
   align-items: center;
   margin-right: auto;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -32,6 +29,9 @@
   transition: color var(--hover-duration) var(--hover-time-function);
   &:hover,
   &:focus {
+    color: var(--accent-color);
+  }
+  .current {
     color: var(--accent-color);
   }
 }
