@@ -2,22 +2,21 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.navigation {
+.navigation__list {
   display: flex;
 }
-.header-main {
+.header__container {
   display: flex;
   align-items: center;
 }
-.navigation-item {
+.navigation__item {
   align-items: center;
   margin-right: auto;
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-
-.header-link {
+.navigation__link {
   @include font(14, 1.14, 500, 0.02em);
   // font-weight: 500;
   // font-size: 14px;
@@ -36,12 +35,7 @@
     color: var(--accent-color);
   }
 }
-.header-list {
-  margin-left: auto;
-  display: flex;
-}
-
-.current {
+.navigation__link--current {
   position: relative;
   &::after {
     position: absolute;
@@ -57,7 +51,11 @@
 }
 
 /*-----------------header contacts------------------*/
-.header-contacts {
+.contacts__nav {
+  margin-left: auto;
+  display: flex;
+}
+.contacts__link {
   @include font(14, 1.14, 500, 0.02em);
   // font-weight: 500;
   // font-size: 14px;
@@ -75,20 +73,13 @@
   }
 }
 
-.header-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.icon-smartphone {
+.contacts__icon {
   display: flex;
   align-items: center;
   display: inline-block;
-  fill: currentColor;
-  margin-right: 10px;
-}
-.icon-envelope {
-  display: flex;
-  display: inline-block;
-  align-items: center;
   fill: currentColor;
   margin-right: 10px;
 }

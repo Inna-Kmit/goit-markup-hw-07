@@ -1,4 +1,4 @@
-.work-title {
+.section__title {
   @include font(36, 1.16, 700, 0.03em);
   // font-weight: 700;
   // font-size: 36px;
@@ -8,19 +8,17 @@
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
-.works {
+.our-works {
   display: flex;
   padding: 0px;
 }
-
-.works-item {
+.works__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-
-.works-top-text {
+.works__text {
   @include font(14, 1.14, 700, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
