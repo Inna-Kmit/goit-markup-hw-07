@@ -16,7 +16,7 @@
   color: var(--accent-color);
 }
 
-.footer-logo {
+.footer__logo--color {
   @include font(26, 1.19, 700, 0.03em);
   // font-weight: 700;
   // font-size: 26px;
@@ -28,6 +28,6 @@
   color: var(--background-color);
   margin-bottom: 20px;
 }
-.footer-blue-logo {
+/*.logo__name {
   color: var(--accent-color);
-}
+}*/

@@ -94,7 +94,7 @@ body {
   /*outline: 3px solid red;*/
 }
 
-.hero-button {
+.hero__btn {
   font-size: 16px;
   line-height: 1.88;
   font-weight: 700;
@@ -116,7 +116,7 @@ body {
   -webkit-transition: color var(--hover-duration) var(--hover-time-function), backraund-color var(--hover-duration) var(--hover-time-function) box-shadow var(--hover-duration) var(--hover-time-function);
   transition: color var(--hover-duration) var(--hover-time-function), backraund-color var(--hover-duration) var(--hover-time-function) box-shadow var(--hover-duration) var(--hover-time-function);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--second-accent-color);
 }
 
@@ -158,11 +158,11 @@ body {
   padding-top: 0px;
 }
 
-.main-section {
+.hero {
   background-color: var(--background-color);
 }
 
-.team-section {
+.our-team {
   background: var(--second-background-color);
 }
 
@@ -489,7 +489,7 @@ body {
   color: var(--accent-color);
 }
 
-.footer-logo {
+.footer__logo--color {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -501,11 +501,10 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-blue-logo {
+/*.logo__name {
   color: var(--accent-color);
-}
-
-.social-list {
+}*/
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,11 +517,11 @@ body {
   margin-top: 16px;
 }
 
-.social-item:not(:last-child) + :not(:first-child) {
+.social__item:not(:last-child) + :not(:first-child) {
   margin-left: 10px;
 }
 
-.social-link {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,12 +538,12 @@ body {
   -webkit-transition: fill var(--hover-duration) var(--hover-time-function), background-color var(--hover-duration) var(--hover-time-function);
   transition: fill var(--hover-duration) var(--hover-time-function), background-color var(--hover-duration) var(--hover-time-function);
 }
-.social-link:hover, .social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
 
-.social-icons {
+.social__icons {
   width: 20px;
   height: 20px;
 }
@@ -754,10 +753,13 @@ body {
   margin-bottom: 50px;
 }
 
-.our-works {
+.works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.our-works {
   padding: 0px;
 }
 
@@ -798,22 +800,22 @@ body {
   display: flex;
 }
 
-.team-item {
+.team__item {
   background-color: var(--background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-card {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
@@ -822,7 +824,7 @@ body {
   margin-bottom: 50px;
 }
 
-.team-title {
+.team__title {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
@@ -832,7 +834,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -842,7 +844,7 @@ body {
   padding-left: auto;
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.16;
   font-weight: 700;
@@ -852,12 +854,12 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
   background-color: inherit;
 }
 
-.clients-list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +868,7 @@ body {
           justify-content: center;
 }
 
-.clients-link {
+.clients__link {
   width: 170px;
   height: 92px;
   display: -webkit-box;
@@ -884,7 +886,7 @@ body {
   -webkit-transition: border var(--hover-duration) var(--hover-time-function), fill var(--hover-duration) var(--hover-time-function);
   transition: border var(--hover-duration) var(--hover-time-function), fill var(--hover-duration) var(--hover-time-function);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
