@@ -1,4 +1,4 @@
-@import './utils/vars';
+@import './utils/variables';
 
 @import './base/reset';
 @import './base/common';
@@ -11,6 +11,8 @@
 @import './components/modal';
 @import './components/logo';
 @import './components/social';
+@import './components/title';
+@import './components/footer-submit';
 
 @import './layaut/header';
 @import './layaut/hero';

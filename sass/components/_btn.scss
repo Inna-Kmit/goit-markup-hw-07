@@ -17,9 +17,8 @@
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  transition: color var(--hover-duration) var(--hover-time-function),
-    backraund-color var(--hover-duration) var(--hover-time-function) box-shadow
-      var(--hover-duration) var(--hover-time-function);
+  transition: color var(--time) var(--time-function),
+    backraund-color var(--time) var(--time-function) box-shadow var(--time) var(--time-function);
   &:hover,
   &:focus {
     background-color: var(--second-accent-color);
@@ -43,10 +42,9 @@
   padding: 6px 22px;
   cursor: pointer;
   display: flex;
-  transition: color var(--hover-duration) var(--hover-time-function),
-    background-color var(--hover-duration) var(--hover-time-function),
-    border var(--hover-duration) var(--hover-time-function),
-    box-shadow var(--hover-duration) var(--hover-time-function);
+  transition: color var(--time) var(--time-function),
+    background-color var(--time) var(--time-function), border var(--time) var(--time-function),
+    box-shadow var(--time) var(--time-function);
   &:hover,
   &:focus {
     background: var(--accent-color);

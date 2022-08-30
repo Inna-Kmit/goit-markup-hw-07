@@ -5,7 +5,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms, visibility 500ms;
-  transition: var(--hover-duration) var(--hover-time-function);
+  transition: var(--time) var(--time-functionn);
 }
 .modal {
   position: fixed;
@@ -35,8 +35,8 @@
   justify-content: center;
   cursor: pointer;
   transition-property: fill;
-  transition-duration: var(--hover-duration);
-  transition-timing-function: var(--hover-time-function);
+  transition-duration: var(--time);
+  transition-timing-function: var(--time-functionn);
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -74,7 +74,7 @@
   font-weight: 400;
   font-size: 14px;
   outline: transparent;
-  transition: border-color var(--hover-duration) var(--hover-time-function);
+  transition: border-color var(--time) var(--time-functionn);
   &:focus {
     border-color: var(--accent-color);
   }
@@ -103,7 +103,7 @@
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--hover-duration) var(--hover-time-function);
+  transition: fill var(--time) var(--time-functionn);
   .modal-input:focus + & {
     fill: var(--accent-color);
   }
@@ -138,7 +138,7 @@
   resize: none;
   padding: 12px;
   outline: transparent;
-  transition: border-color var(--hover-duration) var(--hover-time-function);
+  transition: border-color var(--time) var(--time-functionn);
   &:focus {
     border-color: var(--accent-color);
   }
@@ -209,7 +209,7 @@
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color var(--hoover-duration) var(--hover-time-function);
+  transition: background-color var(--time) var(--time-functionn);
   &:hover,
   &:focus {
     background-color: var(--second-accent-color);

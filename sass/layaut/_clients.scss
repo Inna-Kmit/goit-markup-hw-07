@@ -25,8 +25,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icons-color);
-  transition: border var(--hover-duration) var(--hover-time-function),
-    fill var(--hover-duration) var(--hover-time-function);
+  transition: border var(--time) var(--time-function), fill var(--time) var(--time-function);
   &:hover,
   &:focus {
     fill: var(--accent-color);

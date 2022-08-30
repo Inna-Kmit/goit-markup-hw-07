@@ -26,7 +26,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: color var(--hover-duration) var(--hover-time-function);
+  transition: color var(--time) var(--time-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -66,7 +66,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--second-text-color);
-  transition: color var(--hover-duration) var(--hover-time-function);
+  transition: color var(--time) var(--time-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
