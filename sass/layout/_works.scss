@@ -1,19 +1,9 @@
-.section__title {
-  @include font(36, 1.16, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
-  // letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
-}
 .works {
   display: flex;
 }
-.our-works {
-  padding: 0px;
-}
+//.our-works {
+//padding: 0px;}
+
 .works__item {
   position: relative;
   &:not(:last-child) {

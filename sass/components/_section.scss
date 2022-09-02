@@ -2,12 +2,19 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.our-work {
+.section--no-pad-top {
   padding-top: 0px;
 }
-.hero {
-  background-color: var(--background-color);
-}
-.our-team {
+.section--second-background-color {
   background: var(--second-background-color);
+}
+.section__title {
+  @include font(36, 1.16, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
+  // letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
 }

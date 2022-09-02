@@ -5,10 +5,9 @@
   --second-text-color: #757575;
   --footer-background: #2f303a;
   --background-color: #ffffff;
-  --background-buttom-color: #f5f4fa;
+  --second-background-color: #f5f4fa;
   --lighter-color: rgba(255, 255, 255, 0.6);
   --black-color: #000000;
-  --second-background-color: #f5f4fa;
   --icons-color: #afb1b8;
   --time: 250ms;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -154,16 +153,22 @@ body {
   padding-bottom: 94px;
 }
 
-.our-work {
+.section--no-pad-top {
   padding-top: 0px;
 }
 
-.hero {
-  background-color: var(--background-color);
+.section--second-background-color {
+  background: var(--second-background-color);
 }
 
-.our-team {
-  background: var(--second-background-color);
+.section__title {
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .backdrop {
@@ -680,7 +685,7 @@ body {
 }
 
 .icon-submit {
-  fill: var(--background-buttom-color);
+  fill: var(--background-color);
 }
 
 /*---------header------------*/
@@ -748,7 +753,7 @@ body {
 }
 
 /*-----------------header contacts------------------*/
-.contacts__nav {
+.contacts__header {
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,6 +798,10 @@ body {
 }
 
 /*-----------Studia hero--------*/
+.hero {
+  background-color: var(--background-color);
+}
+
 .hero {
   background-color: var(--footer-background);
   padding-top: 200px;
@@ -878,24 +887,10 @@ body {
   color: var(--second-text-color);
 }
 
-.section__title {
-  font-size: 36px;
-  line-height: 1.16;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
-}
-
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.our-works {
-  padding: 0px;
 }
 
 .works__item {
